@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+    <!--Sidebar-->
+    <div class="wrapper">
+        <aside id="sidebar">
+            <div class="d-flex">
+                <button class="toggle-btn" type="button">
+                    <i class="lni lni-grid-alt"></i>
+                </button>
+                <div class="sidebar-logo">
+                    <a href="#">College</a>
+                </div>
+            </div>
+            <ul class="sidebar-nav">
+                <li class="sidebar-item">
+                    <a href="#main" class="sidebar-link">
+                        <i class="lni lni-user"></i>
+                        <span>Student</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <i class="lni lni-agenda"></i>
+                        <span>none</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+                        data-bs-target="#auth" aria-expanded="false" aria-controls="auth">
+                        <i class="lni lni-protection"></i>
+                        <span>none</span>
+                    </a>
+                    <ul id="auth" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link">none</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link">none</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+                        data-bs-target="#multi" aria-expanded="false" aria-controls="multi">
+                        <i class="lni lni-layout"></i>
+                        <span>none</span>
+                    </a>
+                    <ul id="multi" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link collapsed" data-bs-toggle="collapse"
+                                data-bs-target="#multi-two" aria-expanded="false" aria-controls="multi-two">
+                                Two Links
+                            </a>
+                            <ul id="multi-two" class="sidebar-dropdown list-unstyled collapse">
+                                <li class="sidebar-item">
+                                    <a href="#" class="sidebar-link">Link 1</a>
+                                </li>
+                                <li class="sidebar-item">
+                                    <a href="#" class="sidebar-link">Link 2</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <i class="lni lni-popup"></i>
+                        <span>none</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <i class="lni lni-cog"></i>
+                        <span>Setting</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="sidebar-footer">
+                <a href="#" class="sidebar-link">
+                    <i class="lni lni-exit"></i>
+                    <span>Logout</span>
+                </a>
+            </div>
+        </aside>
+
+        <!--tabs-->
+        <div class="main p-3">
+            <div>
+                <h1>
+                    Sidebar Bootstrap 5
+                </h1>
+                
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="personal-tab" data-bs-toggle="tab" data-bs-target="#personal-tab-pane" type="button" role="tab" aria-controls="personal-tab-pane" aria-selected="true">Personal Data</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="family-tab" data-bs-toggle="tab" data-bs-target="#family-tab-pane" type="button" role="tab" aria-controls="family-tab-pane" aria-selected="false">Family Background</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="Background-tab" data-bs-toggle="tab" data-bs-target="#Background-tab-pane" type="button" role="tab" aria-controls="Background-tab-pane" aria-selected="false">Academic Background</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="History-tab" data-bs-toggle="tab" data-bs-target="#History-tab-pane" type="button" role="tab" aria-controls="History-tab-pane" aria-selected="false">Academic History</button>
+                      </li>
+                  </ul>
+                  <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="personal-tab-pane" role="tabpanel" aria-labelledby="personal-tab" tabindex="0"><div class="container mt-5">
+                       
+                        <h3>Personal Data Form</h3>
+                        <section>
+                            <div class="row">
+                            <div class="col">
+                              <input type="text" class="form-control" placeholder="First Name" aria-label="First name">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Middle Name" aria-label="Last name">
+                              </div>
+                            <div class="col">
+                              <input type="text" class="form-control" placeholder="Last Name" aria-label="Last name">
+                            </div>
+                          </div>
+                          <div class="col-md-3">
+                            <label for="inputState" class="form-label"></label>
+                            <select id="inputState" class="form-select">
+                              <option selected>Gender</option>
+                              <option>Male</option>
+                              <option>Female</option>
+                            </select>
+                            <div class="col-md-3">
+                                <label for="inputState" class="form-label"></label>
+                                <input type="date" class="data-bs-toggle" placeholder="data-bs-toggle" aria-label="data-bs-toggle">
+                                
+                              </div>
+                          </div>
+                        </section>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="family-tab-pane" role="tabpanel" aria-labelledby="family-tab" tabindex="0">to be continue...</div>
+                    <div class="tab-pane fade" id="Background-tab-pane" role="tabpanel" aria-labelledby="Background-tab" tabindex="0">I'll contact you later</div>
+                    <div class="tab-pane fade" id="History-tab-pane" role="tabpanel" aria-labelledby="History-tab" tabindex="0">History</div>
+                    
+                  </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
